@@ -12,14 +12,15 @@ export default class TextPage extends Component {
         this.state = {
             showButtons: false
         };
+
         this.initSentences(this.props.content);
     }
 
     componentWillReceiveProps(nextProps) {
-       if(this.props.title !== nextProps.title) {
-           this.initSentences(nextProps.content);
-           this.setState({showButtons: false});
-       }
+        if (this.props.title !== nextProps.title) {
+            this.initSentences(nextProps.content);
+            this.setState({showButtons: false});
+        }
     }
 
 
@@ -42,7 +43,7 @@ export default class TextPage extends Component {
             }
             else this.renderArr.push((<span key={i}>{`${t} `}</span>));
 
-            if(t.endsWith("!")) {
+            if (t.endsWith("!")) {
                 this.renderArr.push((
                     <Typing.Delay ms={500}/>
                 ));
@@ -79,6 +80,14 @@ export default class TextPage extends Component {
         this.setState(this.state);
     }
 
+    nextComponent(left) {
+        if (left) {
+            this.props.onClick(this.props.leftIndex);
+        } else {
+            this.props.onClick(this.props.rightIndex);
+        }
+    }
+
     /**
      * work with assumption have props with text
      */
@@ -99,10 +108,10 @@ export default class TextPage extends Component {
                         {
                             this.state.showButtons &&
                             <div className="button-container">
-                                <Button onClick={() => this.props.onClick(this.props.index * 2 + 1)}
-                                        label={this.props.posMessage} className={"ui-button-success"}/>
-                                <Button onClick={() => this.props.onClick(this.props.index * 2 + 2)}
-                                        label={this.props.negMessage} className={"ui-button-danger"}/>
+                                <Button onClick={() => this.nextComponent(true)}
+                                        label={this.props.posChoice} className={"ui-button-success"}/>
+                                <Button onClick={() => this.nextComponent(false)}
+                                        label={this.props.negChoice} className={"ui-button-danger"}/>
                             </div>
                         }
                     </div>

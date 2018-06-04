@@ -5,6 +5,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^1.2.0",
     "primereact": "^1.5.3",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
@@ -17,6 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "eject": "react-scripts eject",
+    "gh-deploy": "npm run build && gh-pages -d build"
+  }, 
+  "homepage": "https://ctrando.github.io/wcwp_multimodal"
 }
