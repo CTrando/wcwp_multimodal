@@ -69,7 +69,7 @@ export default class TextPage extends Component {
         }
 
         this.toBeRendered = (
-            <Typing key={content} speed={25} onFinishedTyping={() => this.setState({showButtons: true})}>
+            <Typing key={content} speed={1} onFinishedTyping={() => this.setState({showButtons: true})}>
                 {this.renderArr}
             </Typing>
         )
