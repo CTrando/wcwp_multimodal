@@ -1,6 +1,13 @@
 .title-bar {
-    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    width: 100%;
     background-color: lightgray;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
 }
 
 .title {
@@ -60,4 +67,10 @@ h1 {
     100% {
         opacity: 1;
     }
+}
+
+#menu {
+    border: none;
+    color: black;
+    background: none;
 }
