@@ -23,7 +23,7 @@ export default class LandingPage extends Component {
         // removing the current one we are on
         newPath.pop();
         let back = newPath.pop();
-        this.setCurrentComponentIndex(back);
+        this.setState({path: newPath}, this.setCurrentComponentIndex.bind(this, back));
     }
 
     constructor(props) {
