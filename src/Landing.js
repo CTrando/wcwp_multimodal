@@ -10,7 +10,20 @@ import {
 export default class LandingPage extends Component {
 
     setCurrentComponentIndex(newIndex) {
-        this.setState({currentComponentIndex: newIndex});
+        let newPath = this.state.path.slice();
+        newPath.push(newIndex);
+        this.setState({currentComponentIndex: newIndex, path: newPath});
+    }
+
+    goBack() {
+        let newPath = this.state.path.slice();
+        if(!newPath || newPath.length < 2) {
+            return;
+        }
+        // removing the current one we are on
+        newPath.pop();
+        let back = newPath.pop();
+        this.setCurrentComponentIndex(back);
     }
 
     constructor(props) {
@@ -18,13 +31,17 @@ export default class LandingPage extends Component {
         this.state = {
             componentInfo: {},
             currentComponentIndex: 0,
+            path: [0],
         };
         this.state.componentInfo = textsObj;
     }
 
     render() {
         let currentComponentInfo = this.state.componentInfo[this.state.currentComponentIndex];
-        let renderedComponent = (<TextPage {...currentComponentInfo} onClick={this.setCurrentComponentIndex.bind(this)}/>);
+        // adding key to make rerender each time
+        let renderedComponent = (<TextPage key={currentComponentInfo.content}{...currentComponentInfo}
+                                           setCurIndex={this.setCurrentComponentIndex.bind(this)}
+                                            goBack={this.goBack.bind(this)}/>);
         return (
             <React.Fragment>
                 {renderedComponent}

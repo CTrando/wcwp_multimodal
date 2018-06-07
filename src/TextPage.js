@@ -100,6 +100,9 @@ export default class TextPage extends Component {
             if (e.keyCode === 32) {
                 this.setState({showButtons: true, spacePressed: true});
             }
+            if (e.keyCode === 8) {
+                this.props.goBack();
+            }
         });
         this.initSentences(this.props.content);
         this.setState(this.state);
@@ -107,9 +110,9 @@ export default class TextPage extends Component {
 
     nextComponent(left) {
         if (left) {
-            this.props.onClick(this.props.leftIndex);
+            this.props.setCurIndex(this.props.leftIndex);
         } else {
-            this.props.onClick(this.props.rightIndex);
+            this.props.setCurIndex(this.props.rightIndex);
         }
     }
 
@@ -145,6 +148,8 @@ export default class TextPage extends Component {
                     <br/>
 
                     <Button type="button" onClick={() => this.skipText()} label="Skip"
+                            className="ui-button-success"/>
+                    <Button type="button" onClick={() => this.props.goBack()} label="Back"
                             className="ui-button-success"/>
                     <Button type="button" onClick={() => this.setState({menuVisible: false})} label="Close"
                             className="ui-button-secondary"/>
