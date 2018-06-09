@@ -7,16 +7,18 @@ import 'primereact/resources/primereact.min.css';
 import 'font-awesome/css/font-awesome.css';
 import {Sidebar} from "primereact/components/sidebar/Sidebar";
 import {Slider} from "primereact/components/slider/Slider";
+import {Link, withRouter} from "react-router-dom";
 
-export default class TextPage extends Component {
+class TextPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
             showButtons: false,
-            speed: 1,
             menuVisible: false,
             toggle: true,
             spacePressed: false,
+            selectLeft: false,
+            selectRight: false
         };
 
         this.initSentences(this.props.content);
@@ -84,28 +86,28 @@ export default class TextPage extends Component {
         }
 
         this.toBeRendered = (
-            <Typing key={this.renderArr} speed={this.state.speed}
+            <Typing key={this.renderArr} speed={this.props.speed}
                     onFinishedTyping={() => this.setState({showButtons: true})}>
                 {this.renderArr}
             </Typing>
         );
     }
 
-    changeSpeed(newSpeed) {
-        this.setState({speed: newSpeed});
+
+    handler(e) {
+        if (e.keyCode === 32) {
+            this.setState({showButtons: true, spacePressed: true});
+        }
     }
 
     componentDidMount() {
-        window.addEventListener('keydown', (e) => {
-            if (e.keyCode === 32) {
-                this.setState({showButtons: true, spacePressed: true});
-            }
-            if (e.keyCode === 8) {
-                this.props.goBack();
-            }
-        });
+        window.addEventListener('keydown', this.handler.bind(this));
         this.initSentences(this.props.content);
         this.setState(this.state);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('keydown', this.handler.bind(this))
     }
 
     nextComponent(left) {
@@ -126,6 +128,13 @@ export default class TextPage extends Component {
 
     render() {
         let that = this;
+        if(this.state.selectLeft) {
+            this.props.history.push(`/${this.props.leftIndex}`);
+        }
+        if(this.state.selectRight) {
+            this.props.history.push(`/${this.props.rightIndex}`);
+        }
+
         return (
             <React.Fragment>
                 <Sidebar visible={this.state.menuVisible} position="right" baseZIndex={1000000}
@@ -133,8 +142,8 @@ export default class TextPage extends Component {
                     <h1 style={{fontWeight: 'normal'}}>Options</h1>
                     <br/>
                     <h2 style={{fontWeight: 'normal'}}>Text Speed</h2>
-                    <Slider style={{width: '200px'}} value={this.state.speed} max={50} onChange={(e) => {
-                        that.changeSpeed(e.value);
+                    <Slider style={{width: '200px'}} value={this.props.speed} max={50} onChange={(e) => {
+                        that.props.changeSpeed(e.value);
                         if (!this.state.showButtons) {
                             if (this.toggle === true) {
                                 that.initSentences(this.props.content + " ");
@@ -156,18 +165,18 @@ export default class TextPage extends Component {
                 </Sidebar>
 
                 <div className="title-bar">
-                    <div className="title">
-                        <h1>{this.props.title} </h1>
+                    <div className="title" aria-label={this.props.title}>
+                        <h1 aria-hidden={true}>{this.props.title} </h1>
                     </div>
                     <Button id="menu" icon="fa-bars" onClick={() => this.setState({menuVisible: true})}/>
                 </div>
-                <div className="text-page">
+                <div className="text-page" aria-label={this.pureText}>
                     {
                         !this.state.spacePressed ?
-                            <div className="text-content">
+                            <div className="text-content" aria-hidden={true}>
                                 {this.toBeRendered}
                             </div> :
-                            <div className="text-content">
+                            <div className="text-content" aria-hidden={true}>
                                 {this.pureText}
                             </div>
                     }
@@ -176,9 +185,10 @@ export default class TextPage extends Component {
                         {
                             this.state.showButtons &&
                             <div className="button-container">
-                                <Button onClick={() => this.nextComponent(true)}
-                                        label={this.props.posChoice} className={"ui-button-success"}/>
-                                <Button onClick={() => this.nextComponent(false)}
+                                <Button onClick={() => this.setState({selectLeft: true})}
+                                        label={this.props.posChoice} className={"ui-button-success"}>
+                                </Button>
+                                <Button onClick={() => this.setState({selectRight: true})}
                                         label={this.props.negChoice} className={"ui-button-danger"}/>
                             </div>
                         }
@@ -188,3 +198,5 @@ export default class TextPage extends Component {
         );
     }
 }
+
+export default withRouter(TextPage);

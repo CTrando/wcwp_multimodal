@@ -7,6 +7,13 @@ import {
     textsObj
 } from "./Text";
 
+import {
+    BrowserRouter as Router,
+    Route,
+} from 'react-router-dom';
+
+import {TitlePage} from "./TitlePage";
+
 export default class LandingPage extends Component {
 
     setCurrentComponentIndex(newIndex) {
@@ -17,7 +24,7 @@ export default class LandingPage extends Component {
 
     goBack() {
         let newPath = this.state.path.slice();
-        if(!newPath || newPath.length < 2) {
+        if (!newPath || newPath.length < 2) {
             return;
         }
         // removing the current one we are on
@@ -32,8 +39,43 @@ export default class LandingPage extends Component {
             componentInfo: {},
             currentComponentIndex: 0,
             path: [0],
+            speed: 1,
+            routes: []
         };
         this.state.componentInfo = textsObj;
+    }
+
+    handler(e) {
+        if (e.keyCode === 32) {
+            this.setState({showButtons: true, spacePressed: true});
+        }
+        if (e.keyCode === 8) {
+            this.goBack();
+        }
+    }
+
+    componentDidMount() {
+        window.addEventListener('keydown', this.handler.bind(this));
+        let that = this;
+        let routes = Object.values(this.state.componentInfo).map((component) => {
+            let currentTextComp = () =>
+                <TextPage
+                    key={component.content}{...component}
+                          setCurIndex={that.setCurrentComponentIndex.bind(that)}
+                          goBack={that.goBack.bind(that)}
+                          speed={that.state.speed}
+                          changeSpeed={that.changeSpeed.bind(this)}
+                />;
+            return <Route key={component.index} path={`/${component.index}`}
+                          component={currentTextComp}
+            />
+        });
+        this.setState({routes: routes});
+    }
+
+
+    changeSpeed(newSpeed) {
+        this.setState({speed: newSpeed});
     }
 
     render() {
@@ -41,11 +83,17 @@ export default class LandingPage extends Component {
         // adding key to make rerender each time
         let renderedComponent = (<TextPage key={currentComponentInfo.content}{...currentComponentInfo}
                                            setCurIndex={this.setCurrentComponentIndex.bind(this)}
-                                            goBack={this.goBack.bind(this)}/>);
+                                           goBack={this.goBack.bind(this)}
+                                           speed={this.state.speed}
+                                           changeSpeed={this.changeSpeed.bind(this)}
+        />);
         return (
-            <React.Fragment>
-                {renderedComponent}
-            </React.Fragment>
+            <Router>
+                <div>
+                    <Route exact path="/" component={TitlePage} />
+                    {this.state.routes}
+                </div>
+            </Router>
         )
     }
 }

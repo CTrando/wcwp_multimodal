@@ -1,0 +1,80 @@
+.title-bar {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.title {
+    padding: 2em;
+    font-family: Roboto, sans-serif;
+}
+
+.title-page {
+    margin-bottom: 2em;
+}
+
+h1 {
+    margin: 0;
+}
+
+.text-button {
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    height: 60px;
+    justify-content: space-around;
+}
+
+.text-page {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.text-content {
+    margin: 2em;
+    font-size: 1.5em;
+    font-family: Roboto, sans-serif;
+    line-height: 30px;
+}
+
+.Typist--blinking {
+    display: inline-block;
+    opacity: 1;
+    animation: blink 1s linear infinite;
+}
+
+.Cursor--blinking {
+    display: inline-block;
+    opacity: 1;
+    animation: blink 1s linear infinite;
+}
+
+.ui-button-text {
+    margin: 1em;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#menu {
+    border: none;
+    color: black;
+    background: none;
+}
