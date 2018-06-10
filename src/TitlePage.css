@@ -5,18 +5,14 @@
     background-color: lightgray;
 }
 
-.button-container {
-    display: flex;
-    justify-content: space-around;
-}
-
 .title {
     padding: 2em;
     font-family: Roboto, sans-serif;
 }
 
-.title-page {
+.title-content {
     margin-bottom: 2em;
+    animation: fadein 2s, enterLeft 1s;
 }
 
 h1 {
@@ -27,19 +23,8 @@ h1 {
     width: 100%;
 }
 
-.button-container {
-    display: flex;
-    height: 60px;
-    justify-content: space-around;
-}
-
-.text-page {
-    width: 100%;
-    margin-bottom: 2em;
-}
-
-.text-content {
-    margin: 2em;
+.title-content {
+    padding: 2em;
     font-size: 1.5em;
     font-family: Roboto, sans-serif;
     line-height: 30px;
@@ -77,4 +62,9 @@ h1 {
     border: none;
     color: black;
     background: none;
+}
+
+#begin {
+     -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
 }

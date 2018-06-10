@@ -2,12 +2,15 @@
     display: grid;
     grid-template-columns: 1fr 100px;
     width: 100%;
-    background-color: lightgray;
+    background: linear-gradient(to left, #7d7e7d 1%,#0e0e0e 100%);
+    color: rgb(255, 250, 205);
 }
 
 .button-container {
     display: flex;
     justify-content: space-around;
+    animation: fadein 1s;
+    height: 60px;
 }
 
 .title {
@@ -23,19 +26,16 @@ h1 {
     width: 100%;
 }
 
-.button-container {
-    display: flex;
-    height: 60px;
-    justify-content: space-around;
-}
-
 .text-page {
+    height: 100%;
     width: 100%;
-    margin-bottom: 2em;
+    padding-bottom: 2em;
+    background: linear-gradient(to right, #ffffff 60%,#e5e5e5 100%);
+    animation: fadein 2s, enterLeft 1s;
 }
 
 .text-content {
-    margin: 2em;
+    padding: 2em;
     font-size: 1.5em;
     font-family: Roboto, sans-serif;
     line-height: 30px;
@@ -57,6 +57,15 @@ h1 {
     margin: 1em;
 }
 
+button:hover {
+    transform: scale(1.2);
+}
+
+#left, #right {
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
 @keyframes blink {
     0% {
         opacity: 1;
@@ -73,4 +82,26 @@ h1 {
     border: none;
     color: black;
     background: none;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes enterLeft {
+    from {
+        position: relative;
+        height: 100vh;
+        left: -100px;
+    }
+    to {
+        height: 100%;
+        position: relative;
+        left: 0;
+    }
 }

@@ -1,22 +1,14 @@
 import React, {Component} from 'react';
 import "./TitlePage.css";
 import {Button} from "primereact/components/button/Button";
-import {Redirect} from "react-router-dom";
+import {Redirect, withRouter} from "react-router-dom";
 
-export class TitlePage extends Component {
-
-    constructor(props){
-        super(props);
-        this.state = {
-            start: false
-        };
+class TitlePage extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
     }
 
-
     render() {
-        if(this.state.start) {
-            return <Redirect to="/0" />
-        }
         return (
             <React.Fragment>
                 <div className="title-page">
@@ -27,7 +19,7 @@ export class TitlePage extends Component {
 
                         <Button id="menu" icon="fa-bars" onClick={() => this.setState({menuVisible: true})}/>
                     </div>
-                    <div className="text-content">
+                    <div className="title-content">
                         Hello, it's good to see you!
                         <br/>
                         <br/>
@@ -41,7 +33,7 @@ export class TitlePage extends Component {
                         and you can choose to agree or disagree with me.
                         <br/>
                         <br/>
-                        Don't worry about disagreeing, it's natural!
+                        Don't worry about disagreeing, it's my job to convince you!
                         <br/>
                         <br/>
                         Based on whether you agree or not, I'll tell you more information or move to other topics, so
@@ -50,17 +42,24 @@ export class TitlePage extends Component {
                         a real conversation.
                         <br/>
                         <br/>
+                        To move forward in the conversation, hit the buttons at the bottom of the screen. To go back,
+                        please use your browser's
+                        back button.
+                        <br/>
+                        <br/>
                         With that out of the way, let's begin!
                         <br/>
                         <br/>
                         Click the button below to start!
-                    </div>
-                    <div className="button-container">
-                        <Button onClick={() => this.setState({start: true})}
-                                label="Begin!" style={{width: ' 200px'}} className={"ui-button-success"}/>
+                        <div className="button-container">
+                            <Button id="begin" onClick={() => this.props.history.push('/0')}
+                                    label="Begin!" style={{width: ' 200px'}} className={"ui-button-success"}/>
+                        </div>
                     </div>
                 </div>
             </React.Fragment>
         );
     }
 }
+
+export default withRouter(TitlePage);

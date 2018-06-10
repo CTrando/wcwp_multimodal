@@ -12,7 +12,7 @@ import {
     Route,
 } from 'react-router-dom';
 
-import {TitlePage} from "./TitlePage";
+import TitlePage from "./TitlePage";
 
 export default class LandingPage extends Component {
 
@@ -66,7 +66,7 @@ export default class LandingPage extends Component {
                           speed={that.state.speed}
                           changeSpeed={that.changeSpeed.bind(this)}
                 />;
-            return <Route key={component.index} path={`${process.env.PUBLIC_URL}/${component.index}`}
+            return <Route key={component.index} path={`/${component.index}`}
                           component={currentTextComp}
             />
         });
@@ -88,9 +88,9 @@ export default class LandingPage extends Component {
                                            changeSpeed={this.changeSpeed.bind(this)}
         />);
         return (
-            <Router>
-                <div>
-                    <Route exact path={`${process.env.PUBLIC_URL}/`} component={TitlePage} />
+            <Router basename={process.env.PUBLIC_URL}>
+                <div className="page">
+                    <Route exact path='/' component={TitlePage} />
                     {this.state.routes}
                 </div>
             </Router>

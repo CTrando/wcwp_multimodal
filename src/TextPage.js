@@ -13,7 +13,7 @@ class TextPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            showButtons: false,
+            showButtons: true,
             menuVisible: false,
             toggle: true,
             spacePressed: false,
@@ -86,10 +86,7 @@ class TextPage extends Component {
         }
 
         this.toBeRendered = (
-            <Typing key={this.renderArr} speed={this.props.speed}
-                    onFinishedTyping={() => this.setState({showButtons: true})}>
-                {this.renderArr}
-            </Typing>
+            this.renderArr
         );
     }
 
@@ -101,6 +98,7 @@ class TextPage extends Component {
     }
 
     componentDidMount() {
+        window.scrollTo(0, 0);
         window.addEventListener('keydown', this.handler.bind(this));
         this.initSentences(this.props.content);
         this.setState(this.state);
@@ -128,47 +126,19 @@ class TextPage extends Component {
 
     render() {
         let that = this;
-        if(this.state.selectLeft) {
+        if (this.state.selectLeft) {
             this.props.history.push(`/${this.props.leftIndex}`);
         }
-        if(this.state.selectRight) {
+        if (this.state.selectRight) {
             this.props.history.push(`/${this.props.rightIndex}`);
         }
 
         return (
             <React.Fragment>
-                <Sidebar visible={this.state.menuVisible} position="right" baseZIndex={1000000}
-                         onHide={() => this.setState({menuVisible: false})}>
-                    <h1 style={{fontWeight: 'normal'}}>Options</h1>
-                    <br/>
-                    <h2 style={{fontWeight: 'normal'}}>Text Speed</h2>
-                    <Slider style={{width: '200px'}} value={this.props.speed} max={50} onChange={(e) => {
-                        that.props.changeSpeed(e.value);
-                        if (!this.state.showButtons) {
-                            if (this.toggle === true) {
-                                that.initSentences(this.props.content + " ");
-                            } else {
-                                that.initSentences(this.props.content);
-                            }
-                            this.toggle = !this.toggle;
-                            that.setState(that.state);
-                        }
-                    }} animate={true}/>
-                    <br/>
-
-                    <Button type="button" onClick={() => this.skipText()} label="Skip"
-                            className="ui-button-success"/>
-                    <Button type="button" onClick={() => this.props.goBack()} label="Back"
-                            className="ui-button-success"/>
-                    <Button type="button" onClick={() => this.setState({menuVisible: false})} label="Close"
-                            className="ui-button-secondary"/>
-                </Sidebar>
-
                 <div className="title-bar">
                     <div className="title" aria-label={this.props.title}>
                         <h1 aria-hidden={true}>{this.props.title} </h1>
                     </div>
-                    <Button id="menu" icon="fa-bars" onClick={() => this.setState({menuVisible: true})}/>
                 </div>
                 <div className="text-page" aria-label={this.pureText}>
                     {
@@ -185,11 +155,10 @@ class TextPage extends Component {
                         {
                             this.state.showButtons &&
                             <div className="button-container">
-                                <Button onClick={() => this.setState({selectLeft: true})}
-                                        label={this.props.posChoice} className={"ui-button-success"}>
-                                </Button>
-                                <Button onClick={() => this.setState({selectRight: true})}
+                                <Button id="right" onClick={() => this.setState({selectRight: true})}
                                         label={this.props.negChoice} className={"ui-button-danger"}/>
+                                <Button id="left" onClick={() => this.setState({selectLeft: true})}
+                                        label={this.props.posChoice} className={"ui-button-success"}/>
                             </div>
                         }
                     </div>
