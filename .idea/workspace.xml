@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cadd85e0-51cc-4d56-9d50-d55520f1b37a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Landing.css" afterPath="$PROJECT_DIR$/src/Landing.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Landing.js" afterPath="$PROJECT_DIR$/src/Landing.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Text.js" afterPath="$PROJECT_DIR$/src/Text.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TextPage.css" afterPath="$PROJECT_DIR$/src/TextPage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TextPage.js" afterPath="$PROJECT_DIR$/src/TextPage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TitlePage.css" afterPath="$PROJECT_DIR$/src/TitlePage.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TitlePage.js" afterPath="$PROJECT_DIR$/src/TitlePage.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -25,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TitlePage.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/TitlePage.js">
+      <file leaf-file-name="Text.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Text.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="175">
+              <caret line="133" column="17" lean-forward="false" selection-start-line="133" selection-start-column="17" selection-end-line="133" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -70,13 +66,13 @@
       <find>fadein</find>
       <find>height</find>
       <find>text-content</find>
-      <find>text-page</find>
       <find>title-page</find>
       <find>text-conten</find>
       <find>text</find>
       <find>text-conte</find>
       <find>button</find>
       <find>didCom</find>
+      <find>text-page</find>
       <find>didCo</find>
     </findStrings>
   </component>
@@ -90,15 +86,15 @@
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/Cursor.scss" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/Text.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="localhost:3000/static/js/bundle.js" />
         <option value="$PROJECT_DIR$/src/Landing.js" />
         <option value="$PROJECT_DIR$/src/TextPage.js" />
         <option value="$PROJECT_DIR$/src/Landing.css" />
-        <option value="$PROJECT_DIR$/src/TextPage.css" />
         <option value="$PROJECT_DIR$/src/TitlePage.css" />
+        <option value="$PROJECT_DIR$/src/TextPage.css" />
         <option value="$PROJECT_DIR$/src/TitlePage.js" />
+        <option value="$PROJECT_DIR$/src/Text.js" />
       </list>
     </option>
   </component>
@@ -114,7 +110,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
+    <option name="x" value="950" />
     <option name="width" value="980" />
     <option name="height" value="1030" />
   </component>
@@ -159,7 +155,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/ctran/PycharmProjects/wcwp-multimodal/src/TextPage.js&#10;TitleP&#9;FILE&#9;file://C:/Users/ctran/PycharmProjects/wcwp-multimodal/src/TitlePage.css&#10;Landing&#9;FILE&#9;file://C:/Users/ctran/PycharmProjects/wcwp-multimodal/src/Landing.css&#10;TextP&#9;FILE&#9;file://C:/Users/ctran/PycharmProjects/wcwp-multimodal/src/TextPage.js&#10;TextPage.&#9;FILE&#9;file://C:/Users/ctran/PycharmProjects/wcwp-multimodal/src/TextPage.css&#10;Text&#9;FILE&#9;file://C:/Users/ctran/PycharmProjects/wcwp-multimodal/src/Text.js&#10;Lan&#9;FILE&#9;file://C:/Users/ctran/PycharmProjects/wcwp-multimodal/src/Landing.js&#10;package&#9;FILE&#9;file://C:/Users/ctran/PycharmProjects/wcwp-multimodal/package.json" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/ctran/PycharmProjects/wcwp-multimodal/src/Text.js&#10;Title&#9;FILE&#9;file://C:/Users/ctran/PycharmProjects/wcwp-multimodal/src/TitlePage.js&#10;TitleP&#9;FILE&#9;file://C:/Users/ctran/PycharmProjects/wcwp-multimodal/src/TitlePage.css&#10;Landing&#9;FILE&#9;file://C:/Users/ctran/PycharmProjects/wcwp-multimodal/src/Landing.css&#10;TextP&#9;FILE&#9;file://C:/Users/ctran/PycharmProjects/wcwp-multimodal/src/TextPage.js&#10;TextPage.&#9;FILE&#9;file://C:/Users/ctran/PycharmProjects/wcwp-multimodal/src/TextPage.css&#10;Text&#9;FILE&#9;file://C:/Users/ctran/PycharmProjects/wcwp-multimodal/src/Text.js&#10;Lan&#9;FILE&#9;file://C:/Users/ctran/PycharmProjects/wcwp-multimodal/src/Landing.js&#10;package&#9;FILE&#9;file://C:/Users/ctran/PycharmProjects/wcwp-multimodal/package.json" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunDashboard">
@@ -210,12 +206,12 @@
       <workItem from="1528244504131" duration="5619000" />
       <workItem from="1528256522655" duration="1031000" />
       <workItem from="1528405382714" duration="4514000" />
-      <workItem from="1528566835770" duration="9247000" />
+      <workItem from="1528566835770" duration="12708000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43987000" />
+    <option name="totallyTimeSpent" value="47448000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -2128,25 +2124,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Text.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="93" column="16" lean-forward="false" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
-          <folding>
-            <marker date="1528090115562" expanded="true" signature="3939:4434" ph="{&quot;title&quot;: &quot;Technology is hurting us&quot;...}" />
-            <marker date="1528090115562" expanded="true" signature="4456:5143" ph="{&quot;title&quot;: &quot;We are addicted to our phones&quot;...}" />
-            <marker date="1528090115562" expanded="true" signature="5165:5844" ph="{&quot;title&quot;: &quot;We are addicted to our phones&quot;...}" />
-            <marker date="1528090115562" expanded="true" signature="5866:6693" ph="{&quot;title&quot;: &quot;We are addicted to our phones&quot;...}" />
-            <marker date="1528090115562" expanded="true" signature="6715:7736" ph="{&quot;title&quot;: &quot;Our phones depress us, they change us&quot;...}" />
-            <marker date="1528090115562" expanded="true" signature="7758:8687" ph="{&quot;title&quot;: &quot;Social media changes us. It's real and it's a problem&quot;...}" />
-            <marker date="1528090115562" expanded="true" signature="8709:9341" ph="{&quot;title&quot;: &quot;A self-harming drug&quot;...}" />
-            <marker date="1528090115562" expanded="true" signature="9364:10674" ph="{&quot;title&quot;: &quot;Phones and social media are fundamentally detrimental and damaging&quot;...}" />
-            <marker date="1528090115562" expanded="true" signature="10696:11564" ph="{&quot;title&quot;: &quot;Phones are inhibiting us&quot;...}" />
-            <marker date="1528090115562" expanded="true" signature="11696:11747" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="http://localhost:3000/static/js/bundle.js">
       <provider selected="true" editor-type-id="httpFileEditor">
         <state />
@@ -2185,38 +2162,6 @@
         <state relative-caret-position="275">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TextPage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <marker date="1528656856147" expanded="true" signature="11:186" ph="{...}" />
-            <marker date="1528656856147" expanded="true" signature="206:307" ph="{...}" />
-            <marker date="1528656856147" expanded="true" signature="316:374" ph="{...}" />
-            <marker date="1528656856147" expanded="true" signature="379:397" ph="{...}" />
-            <marker date="1528656856147" expanded="true" signature="412:432" ph="{...}" />
-            <marker date="1528656856147" expanded="true" signature="445:617" ph="{...}" />
-            <marker date="1528656856147" expanded="true" signature="633:736" ph="{...}" />
-            <marker date="1528656856147" expanded="true" signature="756:843" ph="{...}" />
-            <marker date="1528656856147" expanded="true" signature="863:950" ph="{...}" />
-            <marker date="1528656856147" expanded="true" signature="968:988" ph="{...}" />
-            <marker date="1528656856147" expanded="true" signature="1003:1033" ph="{...}" />
-            <marker date="1528656856147" expanded="true" signature="1049:1124" ph="{...}" />
-            <marker date="1528656856147" expanded="true" signature="1143:1254" ph="..." />
-            <marker date="1528656856147" expanded="true" signature="1152:1179" ph="{...}" />
-            <marker date="1528656856147" expanded="true" signature="1188:1215" ph="{...}" />
-            <marker date="1528656856147" expanded="true" signature="1225:1252" ph="{...}" />
-            <marker date="1528656856147" expanded="true" signature="1262:1323" ph="{...}" />
-            <marker date="1528656856147" expanded="true" signature="1343:1417" ph="..." />
-            <marker date="1528656856147" expanded="true" signature="1354:1380" ph="{...}" />
-            <marker date="1528656856147" expanded="true" signature="1388:1415" ph="{...}" />
-            <marker date="1528656856147" expanded="true" signature="1440:1615" ph="..." />
-            <marker date="1528656856147" expanded="true" signature="1451:1531" ph="{...}" />
-            <marker date="1528656856147" expanded="true" signature="1539:1613" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2292,10 +2237,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/TextPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+          <folding>
+            <marker date="1528657269767" expanded="true" signature="11:186" ph="{...}" />
+            <marker date="1528657269767" expanded="true" signature="206:307" ph="{...}" />
+            <marker date="1528657269767" expanded="true" signature="316:374" ph="{...}" />
+            <marker date="1528657269767" expanded="true" signature="379:397" ph="{...}" />
+            <marker date="1528657269767" expanded="true" signature="412:432" ph="{...}" />
+            <marker date="1528657269767" expanded="true" signature="445:621" ph="{...}" />
+            <marker date="1528657269767" expanded="true" signature="637:740" ph="{...}" />
+            <marker date="1528657269767" expanded="true" signature="760:847" ph="{...}" />
+            <marker date="1528657269767" expanded="true" signature="867:954" ph="{...}" />
+            <marker date="1528657269767" expanded="true" signature="972:992" ph="{...}" />
+            <marker date="1528657269767" expanded="true" signature="1007:1037" ph="{...}" />
+            <marker date="1528657269767" expanded="true" signature="1053:1128" ph="{...}" />
+            <marker date="1528657269767" expanded="true" signature="1147:1258" ph="..." />
+            <marker date="1528657269767" expanded="true" signature="1156:1183" ph="{...}" />
+            <marker date="1528657269767" expanded="true" signature="1192:1219" ph="{...}" />
+            <marker date="1528657269767" expanded="true" signature="1229:1256" ph="{...}" />
+            <marker date="1528657269767" expanded="true" signature="1266:1327" ph="{...}" />
+            <marker date="1528657269767" expanded="true" signature="1347:1421" ph="..." />
+            <marker date="1528657269767" expanded="true" signature="1358:1384" ph="{...}" />
+            <marker date="1528657269767" expanded="true" signature="1392:1419" ph="{...}" />
+            <marker date="1528657269767" expanded="true" signature="1444:1619" ph="..." />
+            <marker date="1528657269767" expanded="true" signature="1455:1535" ph="{...}" />
+            <marker date="1528657269767" expanded="true" signature="1543:1617" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/TitlePage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="375">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <marker date="1528660774542" expanded="false" signature="7:180" ph="..." />
+            <marker date="1528660774542" expanded="true" signature="216:2601" ph="{...}" />
+            <marker date="1528660774542" expanded="true" signature="242:280" ph="{...}" />
+            <marker date="1528660774542" expanded="true" signature="295:2599" ph="{...}" />
+            <marker date="1528660774542" expanded="true" signature="326:2582" ph="&lt;React.Fragment/&gt;" />
+            <marker date="1528660774542" expanded="true" signature="359:2552" ph="&lt;div/&gt;" />
+            <marker date="1528660774542" expanded="true" signature="408:642" ph="&lt;div/&gt;" />
+            <marker date="1528660774542" expanded="true" signature="460:615" ph="&lt;div/&gt;" />
+            <marker date="1528660774542" expanded="true" signature="663:2529" ph="&lt;div/&gt;" />
+            <marker date="1528660774542" expanded="true" signature="2233:2502" ph="&lt;div/&gt;" />
+            <marker date="1528660774542" expanded="true" signature="2296:2471" ph="&lt;Button/&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Text.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="133" column="17" lean-forward="false" selection-start-line="133" selection-start-column="17" selection-end-line="133" selection-end-column="17" />
           <folding />
         </state>
       </provider>

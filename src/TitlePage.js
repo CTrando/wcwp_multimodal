@@ -16,8 +16,6 @@ class TitlePage extends Component {
                         <div className="title" aria-label={this.props.title}>
                             <h1 aria-hidden={true}> Introduction </h1>
                         </div>
-
-                        <Button id="menu" icon="fa-bars" onClick={() => this.setState({menuVisible: true})}/>
                     </div>
                     <div className="title-content">
                         Hello, it's good to see you!
