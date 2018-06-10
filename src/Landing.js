@@ -66,7 +66,7 @@ export default class LandingPage extends Component {
                           speed={that.state.speed}
                           changeSpeed={that.changeSpeed.bind(this)}
                 />;
-            return <Route key={component.index} path={`/${component.index}`}
+            return <Route key={component.index} path={`${process.env.PUBLIC_URL}/${component.index}`}
                           component={currentTextComp}
             />
         });
@@ -90,7 +90,7 @@ export default class LandingPage extends Component {
         return (
             <Router>
                 <div>
-                    <Route exact path="/" component={TitlePage} />
+                    <Route exact path={`${process.env.PUBLIC_URL}/`} component={TitlePage} />
                     {this.state.routes}
                 </div>
             </Router>
