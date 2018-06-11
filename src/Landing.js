@@ -13,6 +13,8 @@ import {
 } from 'react-router-dom';
 
 import TitlePage from "./TitlePage";
+import EndingPage from "./EndingPage";
+import WorksCited from "./WorksCited";
 
 export default class LandingPage extends Component {
 
@@ -55,6 +57,7 @@ export default class LandingPage extends Component {
     }
 
     componentDidMount() {
+        window.scrollTo(0, 0);
         window.addEventListener('keydown', this.handler.bind(this));
         let that = this;
         let routes = Object.values(this.state.componentInfo).map((component) => {
@@ -92,6 +95,8 @@ export default class LandingPage extends Component {
                 <div className="page">
                     <Route exact path='/' component={TitlePage} />
                     {this.state.routes}
+                    <Route path='/-1' component={EndingPage} />
+                    <Route path='/works_cited' component={WorksCited} />
                 </div>
             </Router>
         )

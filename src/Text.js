@@ -31,7 +31,7 @@ export let text1 = {
     index: 1,
     leftIndex: 3,
     rightIndex: 3,
-    content: "It's good that you agree, but it's also important to understand why phones and social media are hurting society. In 2017 alone, 94% of Americans owned phones, and looking at the youth population, that number rose to 100%. Americans grow anxious without our technological companions, and on average they use them for over 4 and 1/2 hours per day! They use our phones and social media daily, and they are spending so much of our precious time, so much of their precious lives, on something so inanimate and replaceable."
+    content: "It's good that you agree, but it's also important to understand why phones and social media are hurting society. In 2017 alone, 95% of Americans owned phones, and looking at the youth population (age 18-29), that number rose to 100%. Americans grow anxious without our technological companions, and on average they use them for over 4 and 1/2 hours per day! They use our phones and social media daily, and they are spending so much of our precious time, so much of their precious lives, on something so inanimate and replaceable."
 };
 
 export let text2 = {
@@ -41,7 +41,7 @@ export let text2 = {
     index: 2,
     leftIndex: 3,
     rightIndex: 4,
-    content: "In that case, listen to this. In 2017 alone, 94% of Americans owned phones, and looking at Americans aged 17-29, that number rose to 100%. NEWLINE Americans grow anxious without their technological companions, and on average they use them for over 4 and 1/2 hours per day! NEWLINE Let that sink in. NEWLINE 4 and 1/2 hours. NEWLINE Americans use their phones and social media daily, and they are spending so much of their precious time, so much of their precious lives, on something so inanimate and replaceable."
+    content: "In that case, listen to this. In 2017 alone, 95% of Americans owned phones, and looking at Americans aged 18-29, that number rose to 100%. NEWLINE Americans grow anxious without their technological companions, and on average they use them for over 4 and 1/2 hours per day! NEWLINE Let that sink in. NEWLINE 4 and 1/2 hours. NEWLINE Americans use their phones and social media daily, and they are spending so much of their precious time, so much of their precious lives, on something so inanimate and replaceable."
 };
 
 export let text4 = {
@@ -61,7 +61,7 @@ export let text3 = {
     index: 3,
     leftIndex: 6,
     rightIndex: 5,
-    content: "What’s worse about phones and social media is that overusing them can destroy the user. NEWLINE A study by University of Virginia researchers Grace Chou and Nicholas Edge found that people who used social media more were unhappier with their lives and believed life was not fair. NEWLINE And this difference in happiness persisted among all groups, whether they were married or single, college students or out working; the researchers found uniformly that the more we use social media platforms like Facebook, the more likely we are to be saddened and lonely. NEWLINE This implies that all this time Americans spend on phones and social media can seriously affect how they perceive the world; it can completely change their view of their lives. NEWLINE That’s dangerous."
+    content: "What’s worse about phones and social media is that overusing them can destroy the user. NEWLINE A study by University of Virginia researchers Grace Chou and Nicholas Edge found that people who used social media more were unhappier with their lives and believed life was not fair. NEWLINE In other words, that the more social media people used, the unhappier they were. NEWLINE And this difference in happiness persisted among all groups, whether they were married or single, college students or out working; the researchers found uniformly that the more we use social media platforms like Facebook, the more likely we are to be saddened and lonely. NEWLINE This implies that all this time Americans spend on phones and social media can seriously affect how they perceive the world; it can completely change their view of their lives. NEWLINE That’s dangerous."
 };
 
 export let text5 = {
@@ -112,13 +112,13 @@ export let text9 = {
     index: 9,
     leftIndex: 10,
     rightIndex: 11,
-    content:"We need to look ahead. NEWLINE If our students are becoming more distracted, if they are becoming worse in academics and having a hard time learning and studying… NEWLINE What does that mean for our future? NEWLINE Sure, you can argue that school and studying is not important, but think about the future of the next generation! NEWLINE They are bound to their phones, consumers in a digital market who can be manipulated through their addictions to their digital devices. NEWLINE Is that really what we want for the future? NEWLINE What of the engineers, the teachers, the thinkers of the future? NEWLINE Can we really advance as a society if society as a whole is stuck on their phones?"
+    content: "We need to look ahead. NEWLINE If our students are becoming more distracted, if they are becoming worse in academics and having a hard time learning and studying… NEWLINE What does that mean for our future? NEWLINE Sure, you can argue that school and studying is not important, but think about the future of the next generation! NEWLINE They are bound to their phones, consumers in a digital market who can be manipulated through their addictions to their digital devices. NEWLINE Is that really what we want for the future? NEWLINE Think of the learning, the opportunities, the knowledge that is ignored in favor of likes on social media or the newest gadget. NEWLINE What of the engineers, the teachers, the thinkers of the future? NEWLINE Can we really advance as a society if society as a whole is stuck on their phones?"
 };
 
 export let text10 = {
     title: "Think about the consequences!",
-    posChoice: "Tell me more",
-    negChoice: "Tell me more",
+    posChoice: "I understand",
+    negChoice: "I see how you can conclude this",
     index: 10,
     leftIndex: -1,
     rightIndex: -1,

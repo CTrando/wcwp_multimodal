@@ -13,7 +13,7 @@ class TitlePage extends Component {
             <React.Fragment>
                 <div className="title-page">
                     <div className="title-bar">
-                        <div className="title" aria-label={this.props.title}>
+                        <div className="title" aria-label="Introduction">
                             <h1 aria-hidden={true}> Introduction </h1>
                         </div>
                     </div>
