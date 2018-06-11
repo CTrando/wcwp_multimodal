@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cadd85e0-51cc-4d56-9d50-d55520f1b37a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/EndingPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WorksCited.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Landing.js" afterPath="$PROJECT_DIR$/src/Landing.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Text.js" afterPath="$PROJECT_DIR$/src/Text.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TitlePage.js" afterPath="$PROJECT_DIR$/src/TitlePage.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,8 +22,8 @@
       <file leaf-file-name="Text.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Text.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="43" column="526" lean-forward="false" selection-start-line="43" selection-start-column="526" selection-end-line="43" selection-end-column="526" />
+            <state relative-caret-position="396">
+              <caret line="108" column="154" lean-forward="false" selection-start-line="108" selection-start-column="151" selection-end-line="108" selection-end-column="154" />
               <folding />
             </state>
           </provider>
@@ -47,7 +42,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>animation</find>
       <find>te</find>
       <find>height: 0px</find>
       <find>button-</find>
@@ -77,6 +71,7 @@
       <find>Think of the</find>
       <find>It's goo</find>
       <find>In that</find>
+      <find>our</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -211,12 +206,12 @@
       <workItem from="1528244504131" duration="5619000" />
       <workItem from="1528256522655" duration="1031000" />
       <workItem from="1528405382714" duration="4514000" />
-      <workItem from="1528566835770" duration="16087000" />
+      <workItem from="1528566835770" duration="17018000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50827000" />
+    <option name="totallyTimeSpent" value="51758000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -2342,8 +2337,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Text.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="43" column="526" lean-forward="false" selection-start-line="43" selection-start-column="526" selection-end-line="43" selection-end-column="526" />
+        <state relative-caret-position="396">
+          <caret line="108" column="154" lean-forward="false" selection-start-line="108" selection-start-column="151" selection-end-line="108" selection-end-column="154" />
           <folding />
         </state>
       </provider>
